@@ -14,7 +14,7 @@ def simulate_grape_game(total_grapes, grapes_eaten, poison_grapes=1):
 st.title("Grape Gamble Simulator")
 st.markdown("Simulate your odds in a deadly game of chance. One grape is poison. The others are worth $100,000 each.")
 
-total_grapes = st.slider("Total number of grapes", 2, 100, 10)
+total_grapes = st.slider("Total number of grapes", 2, 1000, 10)
 grapes_eaten = st.slider("Number of grapes you want to eat", 1, total_grapes, 1)
 poison_grapes = st.slider("Number of poison grapes", 1, min(5, total_grapes - 1), 1)
 
